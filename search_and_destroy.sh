@@ -7,7 +7,7 @@ sleep 1
 rm -rf /tmp/legendas/legendas.tv
 /usr/local/bin/wget --mirror --load-cookies $HOME/Development/Autosubs/cookies.txt -P /tmp/legendas/ http://legendas.tv/info.php?d=`cat /tmp/legendas/legenda_id.txt`&c=1
 
-sleep 20
+sleep 50
 
 cd /tmp/legendas/legendas.tv
 mv info\.php\?d\=`cat /tmp/legendas/legenda_id.txt`\&c\=1 legenda.rar
