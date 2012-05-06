@@ -4,7 +4,7 @@ f = open('/tmp/legendas/html', 'r')
 html = f.read()
 
 soup = BeautifulSoup(html)
-table = soup.find('table', {"class": "buscaDestaque"})
+table = soup.find('table', {"class": "buscaDestaque"}) or soup.find('table', {"class": "buscaNDestaque"})
 onclick = table['onclick']
 subtitle_id = onclick[21:53]
 
